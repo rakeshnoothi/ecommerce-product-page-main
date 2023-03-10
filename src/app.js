@@ -14,11 +14,6 @@ const closeBtn = document.querySelector("[data-close]");
 const desktopMaskImg = document.querySelector("[data-desktopMaskImg]");
 const desktopPrevBtn = document.querySelector("[data-desktopPreviousBtn]");
 const desktopNxtBtn = document.querySelector("[data-desktopNextbtn]");
-const cartIcon = document.querySelector("[data-cartIcon]");
-const cartCard = document.querySelector("[data-cartCard]");
-const cartSection = document.querySelector("[data-cartSection]");
-const addToCartBtn = document.querySelector("[data-addToCartBtn]");
-const productName = document.querySelector("[data-productName]").innerText;
 
 // displaying menu bar on the left side.
 menuIcon.addEventListener("click", () => {
@@ -96,9 +91,4 @@ plusBtn.addEventListener("click", () => {
     quantityValue++;
     quantity.innerText = quantityValue;
   }
-});
-
-// cartCard display.
-cartIcon.addEventListener("click", () => {
-  cartCard.classList.toggle("hidden");
 });
